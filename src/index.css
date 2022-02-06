@@ -1,0 +1,91 @@
+body{
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+#container{
+  margin-top: 10%;
+  background-color: skyblue;
+}
+p{
+  margin-top: auto;
+  color:black;
+  text-align: center;
+  font-size: 28px;  
+  font-style: inherit;
+  font-family: monospace;
+  border-bottom: 1px solid darkblue;
+  padding-bottom: 9px;
+}
+.list-of-tasks-todo{
+  padding-top: 30px;
+  width: 400px;
+}
+.task-name{
+  cursor: pointer;
+  
+  
+}
+.task-status{
+  background:lavender;
+  padding:3px;
+  font-size: 1.0rem;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+  
+}
+.task-status:hover{
+  background-color: white;}
+.completed-task{
+  text-decoration: line-through;
+}
+
+button{
+  border: 0;
+  cursor: pointer;
+  font-size: 18px;
+  outline: 0;
+}
+.task-status button{
+  background: transparent;
+  outline: 0;
+  padding: 0 15px;
+  color: black;
+}
+
+input{
+  background-color: white;
+  padding: 7px 10px;
+  font-size: 1rem;
+  color: black;
+  outline: 0;
+  border: 0;
+  flex: 1;
+}
+
+form{
+  display: flex;
+  padding-top: 10px;
+}
+form button{
+  color: black;
+  background: white;
+  outline: 0;
+  padding: 0 15px;
+}
+@media only screen and (max-width: 600px) {
+  .list-of-tasks-todo{
+  padding-top: 30px;
+  width: auto;
+}
+#container{
+  margin-top: 30%;
+}
+}
